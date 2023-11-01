@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(175, 238, 238,0.5);
+}
+
+.calculator{
+    background: #255a93;
+    /* border: 2px solid #255a93; */
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input{
+    font-size: 45px;
+    text-align: right;
+    background: transparent;
+    margin: 30px 50px 0 50px;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    width: 300px;
+}
+
+.calculator button{
+    /* background: #ffffff; */
+    background: #255a93;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
+    /* border: 1px solid #255a93; */
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    width: 50px;
+}
+
+button:hover{
+    background: #3498db;
+    color: #ffffff;
+}
+
+.buttons{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.buttons button:last-child{
+    width: 120px;
+}
+
+.operation{
+color: #33ffd8;
+}
+
+.buttons button:not(.operation){
+    color: #fff;
+}
